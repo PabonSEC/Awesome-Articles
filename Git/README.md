@@ -5,7 +5,7 @@
     </h1>
 </div>
 
-## Save username and password in GIT
+## :cricket: Save username and password in GIT
 
 ### Run
 
@@ -24,3 +24,12 @@ git config --global credential.helper 'cache --timeout=14400'
 ```
 
 This command will remember your credentials for 4 hours. Your `username` and `password` will be asked for the first time during **push** or **pull** as well.
+
+```bash
+git config --global user.name "your username"
+git config --global user.password "your password"
+git config --global user.email "your email"
+```
+
+These commands will store your `username, password and email` in `.gitconfig` file into your home directory.
+**Storing global email would help you to [count](https://help.github.com/en/github/setting-up-and-managing-your-github-profile/why-are-my-contributions-not-showing-up-on-my-profile#contributions-that-are-counted) your github contribution during commits.**
